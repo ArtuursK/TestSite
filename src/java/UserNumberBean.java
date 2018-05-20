@@ -16,7 +16,7 @@ public class UserNumberBean implements Serializable {
     Integer randomInt = null;
     Integer userNumber = null;
     String response = null;
-    private long maximum=10;
+    private long maximum=5;
     private long minimum=0;
 
     public UserNumberBean() {
