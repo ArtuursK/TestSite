@@ -31,7 +31,7 @@
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>Faces Servlet</servlet-name>
-        <url-pattern>/faces/*</url-pattern>
+        <url-pattern>*.xhtml</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>test</servlet-name>
@@ -43,7 +43,7 @@
         </session-timeout>
     </session-config>
     <welcome-file-list>
-        <welcome-file>faces/greeting.xhtml</welcome-file>
+        <welcome-file>greeting.xhtml</welcome-file>
         <welcome-file>redirect.jsp</welcome-file>
     </welcome-file-list>
 </web-app>

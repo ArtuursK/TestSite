@@ -10,17 +10,17 @@ Arturs Kempelis
       xmlns:f="http://java.sun.com/jsf/core">
           
     <h:head>
-        <h:outputStylesheet library="css" name="default.css"/>
+        <h:outputStylesheet name="TestSite.css" />
         <title>Guess Number Facelets Application</title>
     </h:head>
     <h:body>
         <h:form>
-            <h:graphicImage library="images" name="wave.med.gif"
-                            alt="Duke waving his hand"/>
             <h2>Hi, my name is Duke. I am thinking of a number from
                 #{userNumberBean.minimum} to #{userNumberBean.maximum}.
                 Can you guess it?
             </h2>
+            
+            
             <p><h:inputText
                     id="userNo"
                     title="Type a number from 0 to 10:"
@@ -30,9 +30,12 @@ Arturs Kempelis
                         maximum="#{userNumberBean.maximum}"/>
                 </h:inputText>
             
-                <h:commandButton id="submit" value="Submit"
+                <h:commandButton id="submit" styleClass="submit" value="Submit"
                                  action="response"/>
             </p>
+            
+            <h2 class="second">Hi, my name is Duke. I am thinking of a number...
+            </h2>
             <h:message showSummary="true" showDetail="false"
                        style="color: #d20005;
                        font-family: 'New Century Schoolbook', serif;
